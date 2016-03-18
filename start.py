@@ -14,7 +14,7 @@ list_of_pages = ['http://postach.us10.list-manage1.com/track/click?u=819841bd248
 
 stemmer = Stemmer('English')
 summarizer = Summarizer(stemmer)
-summarizer.stop_words = get_stop_words(LANGUAGE)
+summarizer.stop_words = get_stop_words('English')
 
 if __name__ == "__main__":
   for url in list_of_pages:
