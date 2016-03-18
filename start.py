@@ -18,7 +18,7 @@ summarizer.stop_words = get_stop_words(LANGUAGE)
 
 if __name__ == "__main__":
   for url in list_of_pages:
-      parser = HtmlParser.from_url(url, Tokenizer(LANGUAGE))
+      parser = HtmlParser.from_url(url, Tokenizer('English'))
       print(lxml.html.parse(url).find(".//title").text)
       print(url),
       for sentence in summarizer(parser.document, 2):
