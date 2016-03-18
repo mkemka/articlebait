@@ -7,7 +7,7 @@ This is just an example.
 
 git clone https://github.com/mkemka/articlepreview.git
 
-cd articlebait
+cd articlepreview
 
 python start.py
 
